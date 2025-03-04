@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate.ejs") %> 
+
+<br />
+<h2>All Listings</h2>
+<div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-1 row-cols-xsm-1 mt-3">
+  <% allListings.forEach((element) => { %>
+    <a href="/listings/<%= element._id %>" class="custom-card-link">
+      <div class="card col custom-card mb-4 mt-4">
+        <img src="<%= element.image %>" class="card-img-top custom-card-img-top" alt="error" style="height: 18rem;">
+        <div class="card-img-overlay custom-card-img-overlay">view</div>
+        <div class="card-body custom-card-body">
+              <h5 class="card-title"><%= element.title %></h5>
+              <p class="card-text">&#8377;<%= element.price.toLocaleString("en-IN") %> per night</p>
+        </div>
+      </div>
+    </a>
+  <% }); %>
+</div>
+
+
+

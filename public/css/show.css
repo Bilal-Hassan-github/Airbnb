@@ -1,0 +1,94 @@
+Default styling for large screens
+.img-col {
+    height: 50vh !important;
+}
+
+.img {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    height: 50vh !important;
+}
+
+.card-text-span {
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.custom-show-fieldset {
+    border-radius: 2rem !important;
+    border: 0.125rem solid #000000 !important;
+}
+
+.custom-show-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.custom-show-card-text {
+    display: flex !important;
+    flex-direction: row;
+}
+
+.custom-show-row-3 h3 {
+    padding: 0;
+}
+
+/* For medium screens (tablets) */
+@media (max-width: 775px) {
+    .custom-show-row-1 {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;    /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
+    }
+
+    .custom-img {
+        height: 40vh !important; /* Adjust image height for smaller screens */
+    }
+
+    .card-body {
+        margin-top: 1rem; /* Add some margin between the image and text */
+    }
+
+    .card-title, .card-text {
+        text-align: center; /* Center align title and text */
+    }
+
+
+
+    .custom-show-row-2 {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;    /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
+    }
+    .custom-show-row-2 .col {
+        width: 100%;
+    }
+}
+
+/* For small screens (phones) */
+@media (max-width: 576px) {
+    .custom-show-row-1 {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;    /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
+    }
+    .custom-img {
+        height: 35vh !important; /* Adjust image height for very small screens */
+    }
+
+    .card-body {
+        margin-top: 1rem; /* Add some margin between the image and text */
+    }
+
+    .custom-show-row-2 {
+        display: flex;
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center;    /* Center content horizontally */
+        justify-content: center; /* Center content vertically */
+    }
+
+}

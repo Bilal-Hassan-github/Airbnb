@@ -1,0 +1,54 @@
+<%- layout("/layouts/boilerplate.ejs") %>
+
+<div class="col-8 offset-2 mt-4">
+    <h2>Edit your Listing</h2>
+    <form action="/listings/<%= list._id %>?_method=PUT" method="POST" class="mt-4 needs-validation" novalidate>
+        <div class="mb-4 col">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" name="list[title]" id="title" value="<%= list.title %>" class="form-control" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="mb-4 col">
+            <label for="description" class="form-label">Description</label>
+            <textarea name="list[description]" id="description" value="<%= list.description %>" class="form-control" required><%= list.description %></textarea>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="mb-4 col">
+            <label for="image" class="form-label">Add image</label>
+            <input type="text" name="list[image]" id="image" value="<%= list.image %>" class="form-control" required />
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="price" class="form-label">Price per night</label>
+            <input type="number" name="list[price]" id="price" value="<%= list.price %>" class="form-control" required />
+            <div class="invalid-feedback">
+                Please enter a valid price.
+            </div>
+        </div>
+        <div class="row">
+            <div class="mb-4 col-md-8">
+                <label for="location" class="form-label">Location</label>
+                <input type="text" name="list[location]" id="location" value="<%= list.location %>" class="form-control" required />
+                <div class="invalid-feedback">
+                    Oops! That doesn't look like a valid city name
+                </div>
+            </div>
+            <div class="mb-4 col-md-4">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" name="list[country]" id="country" value="<%= list.country %>" class="form-control" required />
+                <div class="invalid-feedback">
+                    Oops! That doesn't look like a valid country name
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn mb-4 mt-4" style="color:white; background-color: #ff385C; border: none;">Edit</button>
+    </form>
+</div>
+
+

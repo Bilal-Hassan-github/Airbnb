@@ -1,0 +1,28 @@
+/* for index.ejs */
+.custom-card-link {
+    text-decoration: none;
+}
+
+.custom-card {
+    border: none !important;
+}
+
+.custom-card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+
+.custom-card-img-overlay {
+    opacity: 0;
+}
+
+.custom-ucard-img-overlay:hover {
+    opacity: 0.05;
+    background-color: white;
+}
+
+.custom-card-body {
+    padding: 0 !important;
+}
+

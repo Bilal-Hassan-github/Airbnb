@@ -1,0 +1,93 @@
+.f-info {
+    height: auto;  /* Remove fixed height for better flexibility */
+    background-color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1rem; /* Add padding for spacing */
+}
+
+.f-info-socials {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem; /* Spacing between socials and text */
+}
+
+.f-info-socials i {
+    font-size: 2rem;  /* Increased icon size */
+    margin: 0.5rem;  /* Added margin for spacing */
+    color: #333;  /* Dark color for icons */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.f-info-socials i:hover {
+    color: #0073e6; /* Change color on hover */
+}
+
+.f-info-text {
+    margin-bottom: 1rem;  /* Spacing between text and links */
+    font-size: 1rem;
+    color: #333;
+}
+
+.f-info-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Spacing between links */
+}
+
+.f-info-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+    color: #0073e6; /* Hover color for links */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .f-info {
+        padding: 1.5rem 1rem;
+    }
+
+    .f-info-socials i {
+        font-size: 1.5rem; /* Smaller icon size on mobile */
+        margin: 0.5rem; /* Keep the margin same for better spacing */
+    }
+
+    .f-info-text {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .f-info-links {
+        flex-direction: column; /* Stack links vertically */
+        gap: 1rem; /* Smaller gap for stacked links */
+    }
+}
+
+/* Mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .f-info {
+        padding: 1rem;  /* Reduce padding for smaller screens */
+    }
+
+    .f-info-socials {
+        margin-bottom: 0.5rem; /* Reduce space between socials and text */
+    }
+
+    .f-info-text {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+        margin-bottom: 1rem; /* Ensure some spacing before links */
+    }
+
+    .f-info-links a {
+        font-size: 0.9rem;  /* Smaller font size for mobile */
+    }
+}
