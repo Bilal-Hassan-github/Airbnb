@@ -1,27 +1,67 @@
-# Skynests[under construction]
-Building Skynests, an innovative Airbnb-type clone, offers travelers a unique platform for booking short-term stays in extraordinary locations.
-## Setup
-1. Clone this repository:
+### 🌍 Skynests Project 🏡
 
-   ```bash
-   git clone https://github.com/Bilal-Hassan-github/Airbnb.git
-   cd Airbnb
-   ```
+#### Project Summary
+**WanderLust** is a comprehensive Full Stack Web Development project designed to facilitate the browsing and booking of vacation accommodations, including houses, villas, and farmhouses. This platform allows users to add their own properties to the listing, providing a diverse range of options for potential renters. Key features include a seamless booking system that simplifies the reservation process and real-time property location views via Mapbox API. To enhance user experience and security, the application supports fast login options through Google OAuth and GitHub OAuth. The application also boasts a dynamic server for responsive performance and an intuitive, aesthetically pleasing user interface, ensuring an engaging and efficient user experience.
 
-2. Install node modules
-    ```bash
-    npm install
+#### Front-end 🌐
+- **Technologies Used**: HTML, CSS, JavaScript, Bootstrap, EJS
+- **Frameworks**: React.js
+- **Features**:
+  - 📱 **Responsive Design**: Optimized for various devices
+  - 🔍 **User-friendly Interface**: For searching and listing properties
+  - 🗺️ **Mapbox API Integration**: For location-based search and property mapping
+    
+#### Back-end 🛠️
+- **Technologies Used**: Node.js, Express.js
+- **Features**:
+  - 🧩 **RESTful API**: Handles user interactions
+  - 🔒 **User Authentication and Authorization**: Using Passport.js and JWT (JSON Web Tokens)
+  - 📄 **Endpoints**: For property listing, login/sign up, and user management
+  - 🏷️ **Seamless Booking System**: Simplifies the reservation process
 
-3. Run app
-    ```bash
-    nodemon app.js
-    ```
+#### Database 🗄️
+- **Database Management System**: MongoDB Atlas
+- **Features**:
+  - 🗂️ **Structured Database Schema**: For efficient data management
+  - 🔍 **Database Queries**: To retrieve and store property and user information
 
-# Screenshots 
-![Screenshot (226)](https://github.com/user-attachments/assets/cc15ee07-ef58-445f-af5f-eb4f9e9cf358)
-![Screenshot (227)](https://github.com/user-attachments/assets/9937a832-b3ac-4c19-beab-bbac2607e71e)
-![Screenshot (228)](https://github.com/user-attachments/assets/3d1fb794-586c-4c1b-a099-fc32bb219383)
-![Screenshot (232)](https://github.com/user-attachments/assets/59f3b93a-163d-4fcd-a091-d4bed23e8dc1)
-![Screenshot (234)](https://github.com/user-attachments/assets/f7b24e61-6547-4e67-93f3-a4c47099a1b4)
-![Screenshot (235)](https://github.com/user-attachments/assets/fee28c68-a967-4270-9fad-74668433cc60)
+#### Cloudinary Image Storage ☁️
+- **Image Hosting**: All listing images are securely stored on Cloudinary, providing reliable and efficient image hosting. This ensures that images are easily accessible, optimized for performance, and enhance the overall user experience.
 
+#### Additional Features 🌟
+- 🔍 **Search and Filter**: Advanced system for property listings
+- ⭐ **User Reviews and Ratings**: Feature for users to review and rate properties
+- 🔐 **Security**: Ensured through encryption and data validation
+- 🗺️ **Map Integration**: For location-based features
+- 📊 **Client/Server-side Validations**: Thorough validations to ensure smooth operation
+- 🎨 **EJS Templates**: For modular routing and dynamic views
+- 🍪 **Cookies and Sessions**: For user-friendly authentication and notifications
+- 🏗️ **MVC Architecture**: For scalable and organized code
+- 💾 **Multer**: For handling file uploads
+
+#### Deployment 🚀
+The WanderLust project has been deployed using Render, connected with MongoDB Atlas for database management.
+
+- **Live Application**: [WanderLust Project]()
+
+#### Authors ✍️
+- **@bilal-hassan**
+
+This WanderLust project showcases my proficiency in full-stack web development, from creating an engaging front-end to managing the back-end and database components. It allows users to search for properties and experience the key functionalities of a vacation rental platform in a seamless and secure manner.
+
+---
+
+🛠️ **Technologies & Packages Used:**
+- MongoDB
+- Express.js
+- Node.js
+- Passport.js for Authentication
+- Cloudinary for Image Storage
+- Connect Flash for Flash Messages
+- Connect Mongo for Session Storage
+- Cookie Parser for Parsing Cookies
+- Dotenv for Environment Variables
+- EJS for Template Rendering
+- Express Session for Session Handling
+- Joi for Data Validation
+- Mongoose for MongoDB Object Modeling
